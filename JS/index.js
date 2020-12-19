@@ -29,3 +29,8 @@ inView('.section').on('scroll', function(el){
   var color = $(el).attr('data-background-color');
   $target.css('background-color', color);
 });
+
+$(".menu").click(function() {
+  $(".menu").toggleClass("active");
+  $(".push").toggleClass("active");
+});
